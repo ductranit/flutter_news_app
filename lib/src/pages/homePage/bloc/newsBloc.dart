@@ -7,11 +7,7 @@ import 'newsState.dart';
 class NewsBloc extends Bloc<NewsEvent, NewsState> {
   final Repository repository;
 
-  NewsBloc({this.repository});
-
-  @override
-  NewsState get initialState => Loading();
-
+  NewsBloc({this.repository}) : super(Loading());
   @override
   Stream<NewsState> mapEventToState(NewsEvent event) async* {
     if (event is Fetch) {

@@ -27,18 +27,18 @@ class BottomNavigationBarWidget extends StatelessWidget {
                 duration: Duration(milliseconds: 300), curve: Curves.linear);
           },
           items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.home), title: Text('Home')),
+                icon: Icon(Icons.play_circle_outline), label: 'Video'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.play_circle_outline), title: Text('Video')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.category), title: Text('Category')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person), title: Text('Profile')),
+                icon: Icon(Icons.category), label: 'Category'),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
           ],
           elevation: 5,
         );
       }
+
+      return Container();
     });
   }
 }

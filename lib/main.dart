@@ -11,7 +11,7 @@ import 'src/pages/newsDetail/bloc/bloc.dart';
 import 'src/resources/repository.dart';
 
 void main() {
-  BlocSupervisor.delegate = SimpleBlocDelegate();
+  Bloc.observer = SimpleBlocDelegate();
   runApp(MyApp());
 }
 
